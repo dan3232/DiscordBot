@@ -3,6 +3,7 @@ const Discord = require("discord.js");
 const fs = require("fs");
 const config = require("./config.json");
 
+
 //Cliente de discord
 const Client = new Discord.Client({ 
     intents: 3243773,
