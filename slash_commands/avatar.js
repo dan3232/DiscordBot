@@ -8,6 +8,7 @@ module.exports = {
             option
                 .setName("user")
                 .setDescription("Usuario cuyo avatar quieres msotrar")
+                .setRequired(true)
         ),
     execute: async (interaction) => {
         const { user, client, guild } = interaction;
@@ -27,6 +28,7 @@ module.exports = {
                 name: `Pedido por ${user.username}`,
                 iconURL: user.avatarURL(),
             })
+            //No funciona bien
             .setTitle("Avatar generado :D")
             .setColor("Aqua")
             .setImage(avatar)
