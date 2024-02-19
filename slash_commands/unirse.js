@@ -3,6 +3,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { joinVoiceChannel, createAudioPlayer, createAudioResource, StreamType } = require('@discordjs/voice');
 const fs = require('fs');
 
+//no vale nada
 module.exports = {
     // Datos del comando
     data: new SlashCommandBuilder()
